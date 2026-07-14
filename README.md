@@ -1,4 +1,4 @@
-# ⚡ Laravel Performance Optimization
+# ⚡ Laravel Application Caching Guide (Part 2)
 
 This project demonstrates how to optimize the performance of a **Laravel 10** application using Laravel's built-in caching commands.
 
