@@ -14,7 +14,7 @@ These optimizations reduce application boot time, improve response speed, and ar
 
 ---
 
-# ❓ Why Use Performance Optimization?
+# ❓ Why Use Application Caching?
 
 Laravel loads routes, configuration files, and Blade views every time a request is made.
 
@@ -27,22 +27,11 @@ By caching them, Laravel avoids repeating these operations, resulting in:
 
 ---
 
-# 🧩 Performance Optimization Techniques Covered
+# 🧩 Application Caching Techniques Covered
 
 - ✅ Route Cache
 - ✅ Config Cache
 - ✅ View Cache
-
----
-
-# 🛠️ Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| Laravel 10 | PHP Framework |
-| Artisan Commands | Cache Optimization |
-| Blade | View Engine |
-| PHP | Backend Language |
 
 ---
 
@@ -187,16 +176,6 @@ Examples:
 
 ---
 
-# ⚖️ Comparison
-
-| Feature | Purpose | Best Used For |
-|---------|---------|---------------|
-| Route Cache | Cache all application routes | Faster route registration |
-| Config Cache | Cache application configuration | Faster application boot |
-| View Cache | Cache compiled Blade templates | Faster page rendering |
-
----
-
 # 🆚 When To Use What?
 
 | Scenario | Recommended Cache |
@@ -205,62 +184,6 @@ Examples:
 | Optimize application configuration | Config Cache |
 | Improve Blade rendering | View Cache |
 | Production deployment | Route + Config + View Cache |
-
----
-
-# 🔥 Real World Example
-
-Imagine deploying a Laravel E-Commerce application.
-
-Without Optimization:
-
-```
-User Request
-
-      ↓
-
-Load Routes
-
-      ↓
-
-Load Config Files
-
-      ↓
-
-Compile Blade Views
-
-      ↓
-
-Return Response
-```
-
-With Optimization:
-
-```
-User Request
-
-      ↓
-
-Load Cached Routes
-
-      ↓
-
-Load Cached Config
-
-      ↓
-
-Load Cached Views
-
-      ↓
-
-Return Response
-```
-
-Result:
-
-- Faster application startup
-- Reduced disk access
-- Better overall performance
 
 ---
 
@@ -315,19 +238,4 @@ php artisan serve
 ```
 
 ---
-
-# 🎯 Key Takeaway
-
-Laravel provides built-in performance optimization features to improve application speed in production.
-
-- **Route Cache** → Optimizes route registration.
-- **Config Cache** → Optimizes configuration loading.
-- **View Cache** → Optimizes Blade template rendering.
-
-These optimizations are commonly executed during deployment to deliver faster and more efficient Laravel applications.
-
----
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
+s project is open-source and available under the **MIT License**.
