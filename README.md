@@ -236,6 +236,3 @@ php artisan optimize:clear
 ```bash
 php artisan serve
 ```
-
----
-s project is open-source and available under the **MIT License**.
